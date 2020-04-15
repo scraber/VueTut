@@ -1,0 +1,35 @@
+.gallery-container{
+    display: block;
+    max-width: 40vw;
+    margin-right: 2vw;
+
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.thumbnail-image {
+    display: flex;
+    align-items: baseline;
+    cursor: pointer;
+}
+.thumbnail-image > img {
+    max-height: 20vh;
+    max-width: 20vw;
+    transition: all 250ms;
+}
+
+.thumbnail-image:hover > img, 
+.thumbnail-image.active > img {
+    opacity: 0.6;
+    box-shadow: 2px 2px 6px 1px rgba(0,0,0, 0.5);
+}
+
+.game-img
+{
+    max-height: 40vh;
+    max-width: 40vw;
+}
